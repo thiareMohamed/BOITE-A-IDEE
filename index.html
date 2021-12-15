@@ -26,14 +26,15 @@
                 <h1 class="text-primary">Formulaire de proposition.</h1>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Titre</label>
-                        <input type="text" class="form-control titre-form" id="exampleFormControlInput1">
+                        <input type="text" required class="form-control titre-form" id="exampleFormControlInput1">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Faites un proposition</label>
-                        <textarea class="form-control msg-form" id="" rows="3"></textarea>
+                        <textarea required class="form-control msg-form" id="" rows="3"></textarea>
+                        <p class="contenu-restant">Caracteres restantes <span class="nbr-restant">120</span> /130</p>
                     </div>
                     <div class="mb-3">
-                        <input type="submit" value="Proposer" class="btn btn-primary w-100" id="">
+                        <input type="submit" value="Proposer" class="btn btnEvoyer btn-primary w-100" id="">
                     </div>
                 </form>
             </div>
