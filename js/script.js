@@ -39,12 +39,33 @@ var donnees =
         },
 ]
 
+
+/* ******************Afficher les donnees********************* */
 for (let donnee of donnees)
 {
     afficheIdee (donnee.titre,donnee.idee)
 }
 
 
+document.querySelector('.form').addEventListener('submit',infoForm)
+
+/* ******************Callback Information Formulaire********************* */
+function infoForm(e)
+{
+    e.preventDefault();
+    let titreIdee = document.querySelector('.titre-form').value
+    let msgIdee = document.querySelector('.msg-form').value
+
+    let nouvelleIdee =
+    {
+        id:4,
+        titre:titreIdee,
+        idee:msgIdee,
+        statu:false,
+    }
+}
+
+/* ******************Creation des elements HTML********************* */
 function afficheIdee (titre,idee)
 {
 
